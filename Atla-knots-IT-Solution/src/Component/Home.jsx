@@ -629,24 +629,14 @@ const Home = () => {
 
               {/* Floating Elements */}
 
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 4, repeat: Infinity }}
-                className="absolute -bottom-12 -right-6 bg-white p-3"
-              >
-                {/* <img
-                  src={ATLAknotsDark}
-                  alt="Business Owner"
-                  className="w-48 rounded-2xl"
-                /> */}
-              </motion.div>
+            
 
               {/* <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute top-12 -left-8 text-6xl"
               >
-                📈
+                
               </motion.div> */}
             </div>
           </motion.div>
