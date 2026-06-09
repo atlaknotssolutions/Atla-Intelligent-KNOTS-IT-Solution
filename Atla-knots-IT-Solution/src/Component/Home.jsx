@@ -9,6 +9,7 @@ import AuditorModule from "../assets/Images/Icon/amazonmodel.png";
 import Helpticket from "../assets/Images/Icon/Help ticket system.png";
 import paymentcollectionengine from "../assets/Images/Icon/paymentcollectionengine.png";
 import AutomatedScoring from "../assets/Images/Icon/AutomatedScoring.png";
+import KRAKPI from "../assets/Images/Icon/KRAKPI.png";
 import {
   Check,
   ArrowRight,
@@ -291,7 +292,7 @@ const Home = () => {
       title: "KRA-KPI",
       desc: "Manage sales targets, TL verification, and lead updates efficiently while integrating Checklist and FMS for complete performance tracking.",
       category: "operations",
-      icon: "📈",
+      icon: KRAKPI,
     },
     {
       title: "AI-Powered Delegation",
