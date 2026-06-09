@@ -6,7 +6,9 @@ import DelegationTaskAssignment from "../assets/Images/Icon/Delegation Task Assi
 import RepetitiveTaskAssignment from "../assets/Images/Icon/Repeatative-Task-Assignment.png";
 import HelpTicketSystem from "../assets/Images/Icon/Help-Ticket-System-1.png";
 import AuditorModule from "../assets/Images/Icon/amazonmodel.png";
-import Helpticket from "../assets/Images/Icon/Help ticket system.png"
+import Helpticket from "../assets/Images/Icon/Help ticket system.png";
+import paymentcollectionengine from "../assets/Images/Icon/paymentcollectionengine.png";
+import AutomatedScoring from "../assets/Images/Icon/AutomatedScoring.png";
 import {
   Check,
   ArrowRight,
@@ -241,13 +243,13 @@ const Home = () => {
       title: "Payment Collection Engine",
       desc: "Send automated payment reminders to your clients in just a few clicks.",
       category: "operations",
-      icon: "💰",
+      icon: paymentcollectionengine,
     },
     {
       title: "Automated Scoring",
       desc: "Automated scoring related to task completion and on-time completion calculated by the System.",
       category: "operations",
-      icon: "⭐",
+      icon: AutomatedScoring,
     },
     {
       title: "Auto Task Reminders",
