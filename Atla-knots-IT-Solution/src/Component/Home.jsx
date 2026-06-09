@@ -891,7 +891,7 @@ const Home = () => {
                 whileHover={{ y: -5 }}
                 className="bg-[#FFF6EF] hover:bg-[#FFF6EF] hover:border-indigo-200 hover:shadow-xl transition-all duration-300 rounded-3xl p-4 group cursor-pointer h-full"
               >
-                <div className="flex items-center gap-4 mb-4 group-hover:scale-110 transition-transform">
+                <div className="flex items-center gap-4 mb-4 ">
                   <div className="flex-none h-24 w-24  bg-transparent  flex items-center justify-center text-5xl text-indigo-700 overflow-hidden">
                     {typeof feature.icon === "string" &&
                     /\.(png|jpe?g|gif|svg)$/i.test(feature.icon) ? (
