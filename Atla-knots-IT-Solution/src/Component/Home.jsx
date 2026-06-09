@@ -156,7 +156,7 @@ const Home = () => {
     {
       title: "Enhance Productivity",
       description:
-        "MI Digital Autopilot optimizes workflows, increasing productivity and improving overall performance.",
+        " optimizes workflows, increasing productivity and improving overall performance.",
       icon: <BarChart3 className="w-6 h-6" />,
       color: "from-orange-500 to-amber-500",
     },
@@ -497,7 +497,7 @@ const Home = () => {
   // FAQ Data
   const faqs = [
     {
-      q: "MI Digital Autopilot (AI KNOTS) is software to streamline and automate your marketing and business operations.",
+      q: "AI KNOTS is software to streamline and automate your marketing and business operations.",
       a: "AI KNOTS helps businesses automate repetitive tasks, streamline workflows, and improve overall operational efficiency through intelligent automation.",
     },
     {
@@ -793,12 +793,12 @@ const Home = () => {
                 <h2 className="text-4xl font-bold text-indigo-950 leading-tight mb-6">
                   Automate Your Complex
                   <br />
-                  Business Process With MI
-                  <br />
-                  Digital Autopilot AI KNOTS
+                  Business Process AI KNOTS
+                  
+                  
                 </h2>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  More work. Less stress! MI Digital Autopilot (AI KNOTS) is the
+                  More work. Less stress! AI KNOTS is the
                   ultimate solution to streamline and automate your marketing
                   and business operations. From automating workflows to
                   generating insightful reports, AI KNOTS acts as your partner
