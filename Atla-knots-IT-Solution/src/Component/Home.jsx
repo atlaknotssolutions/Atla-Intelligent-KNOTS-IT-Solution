@@ -18,6 +18,7 @@ import QuickLaunch from "../assets/Images/Icon/QuickLaunch.png";
 import LeaveRegister from "../assets/Images/Icon/LeaveRegister.png";
 import HiringFMS from "../assets/Images/Icon/image1.png";
 import AutoTaskReminders from "../assets/Images/Icon/AutoTaskReminders2.png";
+import dashboard from "../assets/Images/Icon/dashboard.png";
 import {
   Check,
   ArrowRight,
@@ -544,7 +545,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white font-sans overflow-x-hidden">
       {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] overflow-hidden">
+     <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-red-700 via-red-600 to-red-400 overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-400/10 rounded-full blur-3xl"></div>
@@ -621,9 +622,9 @@ const Home = () => {
           >
             <div className="relative">
               <img
-                src={ATLAknotsDark}
+                src={dashboard}
                 alt="AI KNOTS Dashboard"
-                className="rounded-2xl shadow-2xl w-full max-w-[520px]"
+                className="rounded-2xl  w-full max-w-[720px]"
               />
 
               {/* Floating Elements */}
@@ -631,7 +632,7 @@ const Home = () => {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="absolute -bottom-12 -right-6 bg-white p-3 rounded-3xl shadow-2xl"
+                className="absolute -bottom-12 -right-6 bg-white p-3"
               >
                 {/* <img
                   src={ATLAknotsDark}
@@ -640,13 +641,13 @@ const Home = () => {
                 /> */}
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute top-12 -left-8 text-6xl"
               >
                 📈
-              </motion.div>
+              </motion.div> */}
             </div>
           </motion.div>
         </div>
@@ -699,7 +700,7 @@ const Home = () => {
                 industries.
               </p>
               <div className="mt-8 flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#673DE6] to-[#8B5CF6] flex items-center justify-center text-white text-2xl">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r bg-gradient-to-br from-red-700 via-red-600 to-red-400 flex items-center justify-center text-white text-2xl">
                   <Play className="w-8 h-8" />
                 </div>
                 <div>
@@ -830,7 +831,7 @@ const Home = () => {
                     whileHover={{ y: -5 }}
                     className="bg-indigo-50 hover:bg-indigo-100 transition-colors rounded-2xl p-6 cursor-pointer"
                   >
-                    <div className="text-4xl font-bold text-indigo-600 mb-1">
+                    <div className="text-4xl font-bold text-red-600 mb-1">
                       <Counter value={stat.number} duration={2} />
                     </div>
                     <div className="text-gray-600 font-medium">
@@ -854,7 +855,7 @@ const Home = () => {
             className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900"
           >
             Our{" "}
-            <span className="bg-gradient-to-r from-[#673DE6] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-red-700 via-red-600 to-red-400 bg-clip-text text-transparent">
               Features
             </span>
           </motion.h2>
@@ -871,7 +872,7 @@ const Home = () => {
                   onClick={() => setActiveFeatureTab(tab)}
                   className={`px-6 py-2 rounded-full font-semibold transition-all text-sm ${
                     activeFeatureTab === tab
-                      ? "bg-gradient-to-r from-[#673DE6] to-[#8B5CF6] text-white shadow"
+                      ? "bg-gradient-to-r bg-gradient-to-br from-red-700 via-red-600 to-red-400 text-white shadow"
                       : "text-gray-600 hover:text-gray-800"
                   }`}
                 >
@@ -923,7 +924,7 @@ const Home = () => {
       </section>
 
       {/* MOST LOVED FEATURES */}
-      <section className="py-20 bg-gradient-to-br from-[#673DE6] to-[#8B5CF6]">
+      <section className="py-20 bg-gradient-to-br bg-gradient-to-br from-red-700 via-red-600 to-red-400">
         <div className="max-w-7xl mx-auto px-6">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -971,16 +972,16 @@ const Home = () => {
           <div className="text-center mb-12">
             <div className="inline-block">
               <div className="flex items-center gap-2 justify-center mb-3">
-                <span className="h-px w-8 bg-indigo-300"></span>
-                <span className="text-indigo-600 font-semibold text-sm tracking-wide uppercase">
+                <span className="h-px w-8 bg-red-300"></span>
+                <span className="text-red-600 font-semibold text-sm tracking-wide uppercase">
                   Our Expertise
                 </span>
-                <span className="h-px w-8 bg-indigo-300"></span>
+                <span className="h-px w-8 bg-red-300"></span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
                 Industries We Serve In
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-indigo-300 rounded-full mx-auto mt-4"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-red-700 via-red-600 to-red-400 rounded-full mx-auto mt-4"></div>
             </div>
             <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
               Delivering tailored solutions across diverse sectors with
@@ -1060,7 +1061,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             Benefits Of Business Process Automation By{" "}
-            <span className="bg-gradient-to-r from-[#673DE6] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-red-700 via-red-600 to-red-400 bg-clip-text text-transparent">
               AI KNOTS
             </span>
           </motion.h2>
@@ -1141,7 +1142,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             What Our{" "}
-            <span className="bg-gradient-to-r from-[#673DE6] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-red-700 via-red-600 to-red-400 bg-clip-text text-transparent">
               Clients Say?
             </span>
           </motion.h2>
@@ -1232,7 +1233,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r from-[#673DE6] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-red-700 via-red-600 to-red-400 bg-clip-text text-transparent">
               Questions
             </span>
           </motion.h2>
