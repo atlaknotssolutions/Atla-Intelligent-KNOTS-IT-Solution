@@ -12,6 +12,9 @@ import AutomatedScoring from "../assets/Images/Icon/AutomatedScoring.png";
 import KRAKPI from "../assets/Images/Icon/KRAKPI.png";
 import intranet from "../assets/Images/Icon/intranet.png";
 import RunoAPIIntegrated from "../assets/Images/Icon/RunoAPIIntegrated.png";
+import AIPoweredDelegation from "../assets/Images/Icon/AIPoweredDelegation.png";
+import ProjectManagementSystem from "../assets/Images/Icon/ProjectManagementSystem.png";
+import QuickLaunch from "../assets/Images/Icon/QuickLaunch.png";
 import {
   Check,
   ArrowRight,
@@ -282,13 +285,13 @@ const Home = () => {
       title: "Quick Launch",
       desc: "Save important links for quick and permanent access directly from the dashboard for faster navigation and productivity.",
       category: "operations",
-      icon: "⚡",
+      icon: QuickLaunch,
     },
     {
       title: "Project Management System",
       desc: "Manage complete projects with a fully customizable and movable workflow to streamline project execution and tracking.",
       category: "operations",
-      icon: "📋",
+      icon: ProjectManagementSystem,
     },
     {
       title: "KRA-KPI",
@@ -312,7 +315,7 @@ const Home = () => {
       title: "Attendance & Site Visit Configure",
       desc: "Configure attendance with location tracking, real-time photo verification, universal attendance, branch-wise attendance, doer-wise attendance, and site visit tracking.",
       category: "operations",
-      icon: "📍",
+      icon: AIPoweredDelegation,
     },
     {
       title: "Scoring",
@@ -348,7 +351,7 @@ const Home = () => {
       title: "Personalized Messaging",
       desc: "AI KNOTS's personalized messaging feature allows you to send automated WhatsApp messages customized to individual recipients.",
       category: "messaging",
-      icon: "📱",
+      icon: ProjectManagementSystem,
     },
     {
       title: "Birthday Reminders",
@@ -796,15 +799,13 @@ const Home = () => {
                   Automate Your Complex
                   <br />
                   Business Process AI KNOTS
-                  
-                  
                 </h2>
                 <p className="text-gray-600 leading-relaxed text-lg">
-                  More work. Less stress! AI KNOTS is the
-                  ultimate solution to streamline and automate your marketing
-                  and business operations. From automating workflows to
-                  generating insightful reports, AI KNOTS acts as your partner
-                  in efficiency and success.
+                  More work. Less stress! AI KNOTS is the ultimate solution to
+                  streamline and automate your marketing and business
+                  operations. From automating workflows to generating insightful
+                  reports, AI KNOTS acts as your partner in efficiency and
+                  success.
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -888,10 +889,10 @@ const Home = () => {
               <motion.div
                 key={index}
                 whileHover={{ y: -5 }}
-                className="bg-[#FFF6EF] hover:bg-[#FFF6EF] border border-gray-100 hover:border-indigo-200 hover:shadow-xl transition-all duration-300 rounded-3xl p-4 group cursor-pointer h-full"
+                className="bg-[#FFF6EF] hover:bg-[#FFF6EF] hover:border-indigo-200 hover:shadow-xl transition-all duration-300 rounded-3xl p-4 group cursor-pointer h-full"
               >
                 <div className="flex items-center gap-4 mb-4 group-hover:scale-110 transition-transform">
-                  <div className="flex-none h-20 w-20 rounded-3xl bg-indigo-50 border border-indigo-100 shadow-sm flex items-center justify-center text-4xl text-indigo-700 overflow-hidden">
+                  <div className="flex-none h-20 w-20 rounded-3xl bg-transparent shadow-sm flex items-center justify-center text-4xl text-indigo-700 overflow-hidden">
                     {typeof feature.icon === "string" &&
                     /\.(png|jpe?g|gif|svg)$/i.test(feature.icon) ? (
                       <img
