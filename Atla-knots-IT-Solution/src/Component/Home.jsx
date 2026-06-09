@@ -10,6 +10,8 @@ import Helpticket from "../assets/Images/Icon/Help ticket system.png";
 import paymentcollectionengine from "../assets/Images/Icon/paymentcollectionengine.png";
 import AutomatedScoring from "../assets/Images/Icon/AutomatedScoring.png";
 import KRAKPI from "../assets/Images/Icon/KRAKPI.png";
+import intranet from "../assets/Images/Icon/intranet.png";
+import RunoAPIIntegrated from "../assets/Images/Icon/RunoAPIIntegrated.png";
 import {
   Check,
   ArrowRight,
@@ -232,7 +234,7 @@ const Home = () => {
       title: "Intranet",
       desc: "Organize and manage external links within AI KNOTS, categorizing them for easy access. Control user access to specific links based on their requirements.",
       category: "operations",
-      icon: "🏢",
+      icon: intranet,
     },
     {
       title: "Manage Multiple Branches",
@@ -268,7 +270,7 @@ const Home = () => {
       title: "Runo API Integrated",
       desc: "Connect AI KNOTS with RUNO CRM to fetch customer leads directly into the system. Use the client information within the FMS for task assignment, tracking, and streamlined communication.",
       category: "operations",
-      icon: "🔌",
+      icon: RunoAPIIntegrated,
     },
     {
       title: "IndiaMART API Integrated",
