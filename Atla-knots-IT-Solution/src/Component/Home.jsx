@@ -16,7 +16,8 @@ import AIPoweredDelegation from "../assets/Images/Icon/AIPoweredDelegation.png";
 import ProjectManagementSystem from "../assets/Images/Icon/ProjectManagementSystem.png";
 import QuickLaunch from "../assets/Images/Icon/QuickLaunch.png";
 import LeaveRegister from "../assets/Images/Icon/LeaveRegister.png";
-
+import HiringFMS from "../assets/Images/Icon/image1.png";
+import AutoTaskReminders from "../assets/Images/Icon/AutoTaskReminders2.png";
 import {
   Check,
   ArrowRight,
@@ -263,7 +264,7 @@ const Home = () => {
       title: "Auto Task Reminders",
       desc: "Automated WhatsApp reminder system to users regarding task updates, deadlines & task completion.",
       category: "operations",
-      icon: "⏰",
+      icon: AutoTaskReminders,
     },
     {
       title: "Inventory Management System",
@@ -329,7 +330,7 @@ const Home = () => {
       title: "Hiring FMS",
       desc: "Use AI KNOTS FMS modules for HR hiring processes and sales lead management to store, track, and manage complete operational workflows efficiently.",
       category: "operations",
-      icon: "👥",
+      icon: HiringFMS,
     },
     {
       title: "Create Chatbot",
@@ -341,7 +342,7 @@ const Home = () => {
       title: "Message Triggering From Google Sheets",
       desc: "AI KNOTS can integrate with Google Sheets to trigger messages based on specific conditions or changes.",
       category: "messaging",
-      icon: "📊",
+      icon: AutoTaskReminders,
     },
     {
       title: "Payment Reminders",
