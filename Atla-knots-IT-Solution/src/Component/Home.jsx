@@ -15,6 +15,8 @@ import RunoAPIIntegrated from "../assets/Images/Icon/RunoAPIIntegrated.png";
 import AIPoweredDelegation from "../assets/Images/Icon/AIPoweredDelegation.png";
 import ProjectManagementSystem from "../assets/Images/Icon/ProjectManagementSystem.png";
 import QuickLaunch from "../assets/Images/Icon/QuickLaunch.png";
+import LeaveRegister from "../assets/Images/Icon/LeaveRegister.png";
+
 import {
   Check,
   ArrowRight,
@@ -309,7 +311,7 @@ const Home = () => {
       title: "Leave Register with Buddy Assign",
       desc: "Manage leave approvals and automatically assign buddies to handle tasks during a doer's absence without interrupting workflow.",
       category: "operations",
-      icon: "🌴",
+      icon: LeaveRegister,
     },
     {
       title: "Attendance & Site Visit Configure",
@@ -321,7 +323,7 @@ const Home = () => {
       title: "Scoring",
       desc: "Track doer-wise and department-wise performance with Weekly MIS Scores and customizable Performance Scores based on task planning, completion, and on-time delivery.",
       category: "operations",
-      icon: "🏆",
+      icon: AutomatedScoring,
     },
     {
       title: "Hiring FMS",
