@@ -522,7 +522,7 @@ export default function About() {
                 <span
                   className={
                     isDark
-                      ? "text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600"
+                      ? "text-transparent bg-clip-text bg-gradient-to-r from-[#2563EB] via-[#3B82F6] to-[#60A5FA]"
                       : "text-red-600"
                   }
                 >

@@ -18,7 +18,7 @@ import QuickLaunch from "../assets/Images/Icon/QuickLaunch.png";
 import LeaveRegister from "../assets/Images/Icon/LeaveRegister.png";
 import HiringFMS from "../assets/Images/Icon/image1.png";
 import AutoTaskReminders from "../assets/Images/Icon/AutoTaskReminders2.png";
-import dashboard from "../assets/Images/Icon/dashboard.png";
+import dashboard from "../assets/Images/Icon/dashboard3.png";
 import {
   Check,
   ArrowRight,
@@ -545,7 +545,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white font-sans overflow-x-hidden">
       {/* HERO SECTION */}
-     <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA] overflow-hidden">
+     <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#e2d7a4] via-[#f9efe1] to-[#b8a790] overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-400/10 rounded-full blur-3xl"></div>
@@ -557,13 +557,13 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
-              Transform Your Ideas Into
-              <br />
-              <span className="text-yellow-300">Intelligent Solutions!</span>
-            </h1>
+<h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#3d220e]">
+  Transform Your Ideas Into
+  <br />
+  <span className="text-[#8B6B4A]">Intelligent Solutions!</span>
+</h1>
 
-            <ul className="space-y-4 text-xl md:text-2xl text-white">
+            <ul className="space-y-4 text-xl md:text-2xl text-brown-900">
               {[
                 "Automate Repetitive Tasks",
                 "Streamline Workflows",
@@ -576,8 +576,8 @@ const Home = () => {
                   transition={{ delay: i * 0.1 }}
                   className="flex items-center gap-4"
                 >
-                  <div className="w-8 h-8 rounded-full bg-green-400 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-5 h-5 text-[#673DE6]" />
+                  <div className="w-8 h-8 rounded-full text-white bg-[#3d220e] flex items-center justify-center flex-shrink-0">
+                    <Check className="w-5 h-5 text-[#d8d7db]" />
                   </div>
                   <span>{item}</span>
                 </motion.li>
@@ -588,7 +588,7 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-[#673DE6] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition flex items-center gap-2 shadow-lg"
+                className="bg-[#846247] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition flex items-center gap-2 shadow-lg"
               >
                 Schedule a demo
                 <ArrowRight className="w-5 h-5" />
@@ -596,7 +596,7 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition"
+                className="border-2 border-white bg-[#846247] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition"
               >
                 Start a free trial
               </motion.button>
@@ -680,7 +680,7 @@ const Home = () => {
                 industries.
               </p>
               <div className="mt-8 flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA] flex items-center justify-center text-white text-2xl">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] flex items-center justify-center text-white text-2xl">
                   <Play className="w-8 h-8" />
                 </div>
                 <div>
@@ -835,7 +835,7 @@ const Home = () => {
             className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900"
           >
             Our{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] bg-clip-text text-transparent">
               Features
             </span>
           </motion.h2>
@@ -852,7 +852,7 @@ const Home = () => {
                   onClick={() => setActiveFeatureTab(tab)}
                   className={`px-6 py-2 rounded-full font-semibold transition-all text-sm ${
                     activeFeatureTab === tab
-                      ? "bg-gradient-to-r bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA] text-white shadow"
+                      ? "bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] text-white shadow"
                       : "text-gray-600 hover:text-gray-800"
                   }`}
                 >
@@ -904,7 +904,7 @@ const Home = () => {
       </section>
 
       {/* MOST LOVED FEATURES */}
-      <section className="py-20 bg-gradient-to-br bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA]">
+      <section className="py-20 bg-gradient-to-br bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB]">
         <div className="max-w-7xl mx-auto px-6">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -963,7 +963,7 @@ const Home = () => {
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
                 Industries We Serve In
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#2563EB] via-[#3B82F6] to-[#60A5FA] rounded-full mx-auto mt-4"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] rounded-full mx-auto mt-4"></div>
             </div>
             <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
               Delivering tailored solutions across diverse sectors with
@@ -1043,7 +1043,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             Benefits Of Business Process Automation By{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] bg-clip-text text-transparent">
               AI KNOTS
             </span>
           </motion.h2>
@@ -1124,7 +1124,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             What Our{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] bg-clip-text text-transparent">
               Clients Say?
             </span>
           </motion.h2>
@@ -1215,7 +1215,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#2563EB] via-[#3B82F6] to-[#60A5FA] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] bg-clip-text text-transparent">
               Questions
             </span>
           </motion.h2>
