@@ -545,7 +545,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white font-sans overflow-x-hidden">
       {/* HERO SECTION */}
-     <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#e2d7a4] via-[#f9efe1] to-[#b8a790] overflow-hidden">
+      <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#e2d7a4] via-[#f9efe1] to-[#b8a790] overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-400/10 rounded-full blur-3xl"></div>
@@ -557,13 +557,13 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-<h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#3d220e]">
-  Transform Your Ideas Into
-  <br />
-  <span className="text-[#8B6B4A]">Intelligent Solutions!</span>
-</h1>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-[#3d220e]">
+              Transform Your Ideas Into
+              <br />
+              <span className="text-[#8B6B4A]">Intelligent Solutions!</span>
+            </h1>
 
-            <ul className="space-y-4 text-xl md:text-2xl text-brown-900">
+            <ul className="space-y-4 text-xl md:text-2xl text-[#3d220e]">
               {[
                 "Automate Repetitive Tasks",
                 "Streamline Workflows",
@@ -588,7 +588,7 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#846247] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition flex items-center gap-2 shadow-lg"
+                className="bg-[#3d220e] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#8B6B4A] transition flex items-center gap-2 shadow-lg"
               >
                 Schedule a demo
                 <ArrowRight className="w-5 h-5" />
@@ -596,7 +596,7 @@ const Home = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-white bg-[#846247] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition"
+                className="border-2 border-[#3d220e] bg-transparent text-[#3d220e] px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#3d220e] hover:text-white transition"
               >
                 Start a free trial
               </motion.button>
@@ -606,7 +606,7 @@ const Home = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="flex items-center gap-3 text-lg font-medium text-white"
+              className="flex items-center gap-3 text-lg font-medium text-[#3d220e]"
             >
               <span className="text-green-400 text-2xl">✔</span> Get 15 Days
               FREE Trial Now
@@ -626,8 +626,6 @@ const Home = () => {
                 alt="AI KNOTS Dashboard"
                 className="rounded-2xl  w-full max-w-[720px]"
               />
-
-              
             </div>
           </motion.div>
         </div>
@@ -934,9 +932,7 @@ const Home = () => {
                   <CheckCircle2Icon className="w-5 h-5 " />
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {feature.desc}
-                </p>
+                <p className="text-gray-600 leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -947,8 +943,6 @@ const Home = () => {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50/30 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header with Logo */}
-
-
 
           {/* Main Title */}
           <div className="text-center mb-12">
@@ -1215,7 +1209,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#aba06e] via-[#e7d0b1] to-[#d4c3ac] bg-clip-text text-transparent">
               Questions
             </span>
           </motion.h2>
