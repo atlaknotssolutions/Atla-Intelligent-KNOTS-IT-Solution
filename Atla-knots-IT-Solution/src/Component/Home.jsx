@@ -18,7 +18,7 @@ import QuickLaunch from "../assets/Images/Icon/QuickLaunch.png";
 import LeaveRegister from "../assets/Images/Icon/LeaveRegister.png";
 import HiringFMS from "../assets/Images/Icon/image1.png";
 import AutoTaskReminders from "../assets/Images/Icon/AutoTaskReminders2.png";
-import dashboard from "../assets/Images/Icon/dashboard3.png";
+import dashboard from "../assets/Images/Icon/dashboard5.png";
 import {
   Check,
   ArrowRight,
@@ -910,11 +910,11 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-center mb-6 text-white"
+            className="text-4xl md:text-5xl font-bold text-center mb-6 text-black"
           >
             Most <span className="text-yellow-300">Loved</span> Features
           </motion.h2>
-          <p className="text-center text-purple-100 mb-12 max-w-2xl mx-auto">
+          <p className="text-center  md:text-2xl font-bold bg-gradient-to-r text-black mx-auto">
             Our clients' favorite features that have transformed their business
             operations
           </p>
@@ -930,11 +930,11 @@ const Home = () => {
                 whileHover={{ scale: 1.02 }}
                 className="bg-white/10 backdrop-blur rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all cursor-pointer"
               >
-                <h3 className="text-2xl font-semibold text-white mb-3 flex items-center gap-2">
+                <h3 className="text-2xl font-semibold text-black mb-3 flex items-center gap-2">
                   <CheckCircle2Icon className="w-5 h-5 " />
                   {feature.title}
                 </h3>
-                <p className="text-purple-100 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {feature.desc}
                 </p>
               </motion.div>
