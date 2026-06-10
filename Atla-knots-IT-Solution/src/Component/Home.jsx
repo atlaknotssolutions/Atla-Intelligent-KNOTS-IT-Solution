@@ -545,7 +545,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white font-sans overflow-x-hidden">
       {/* HERO SECTION */}
-     <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] overflow-hidden">
+     <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-400/10 rounded-full blur-3xl"></div>
@@ -680,7 +680,7 @@ const Home = () => {
                 industries.
               </p>
               <div className="mt-8 flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] flex items-center justify-center text-white text-2xl">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-r bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] flex items-center justify-center text-white text-2xl">
                   <Play className="w-8 h-8" />
                 </div>
                 <div>
@@ -835,7 +835,7 @@ const Home = () => {
             className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900"
           >
             Our{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] bg-clip-text text-transparent">
               Features
             </span>
           </motion.h2>
@@ -852,7 +852,7 @@ const Home = () => {
                   onClick={() => setActiveFeatureTab(tab)}
                   className={`px-6 py-2 rounded-full font-semibold transition-all text-sm ${
                     activeFeatureTab === tab
-                      ? "bg-gradient-to-r bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] text-white shadow"
+                      ? "bg-gradient-to-r bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] text-white shadow"
                       : "text-gray-600 hover:text-gray-800"
                   }`}
                 >
@@ -904,7 +904,7 @@ const Home = () => {
       </section>
 
       {/* MOST LOVED FEATURES */}
-      <section className="py-20 bg-gradient-to-br bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6]">
+      <section className="py-20 bg-gradient-to-br bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6]">
         <div className="max-w-7xl mx-auto px-6">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -963,7 +963,7 @@ const Home = () => {
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
                 Industries We Serve In
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] rounded-full mx-auto mt-4"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] rounded-full mx-auto mt-4"></div>
             </div>
             <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
               Delivering tailored solutions across diverse sectors with
@@ -1043,7 +1043,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             Benefits Of Business Process Automation By{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] bg-clip-text text-transparent">
               AI KNOTS
             </span>
           </motion.h2>
@@ -1124,7 +1124,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             What Our{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] bg-clip-text text-transparent">
               Clients Say?
             </span>
           </motion.h2>
@@ -1215,7 +1215,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
           >
             Frequently Asked{" "}
-            <span className="bg-gradient-to-r bg-gradient-to-br from-[#673DE6] via-[#7C3AED] to-[#8B5CF6] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6] bg-clip-text text-transparent">
               Questions
             </span>
           </motion.h2>
