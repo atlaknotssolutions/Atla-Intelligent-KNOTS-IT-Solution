@@ -633,7 +633,7 @@ const CreateProduct = () => {
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Category
             </label>
-            {fetchingCategories ? (
+            {fetchingCategories ? (-
               <div className="text-gray-500">Loading categories...</div>
             ) : categories.length === 0 ? (
               <div className="text-red-600">No categories available</div>
