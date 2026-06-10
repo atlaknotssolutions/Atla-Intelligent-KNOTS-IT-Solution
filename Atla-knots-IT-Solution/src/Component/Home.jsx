@@ -948,6 +948,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header with Logo */}
 
+
           {/* Main Title */}
           <div className="text-center mb-12">
             <div className="inline-block">
