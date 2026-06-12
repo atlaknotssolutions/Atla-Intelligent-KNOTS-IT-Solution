@@ -456,16 +456,19 @@ const Contact = () => {
                     className={`rounded-2xl overflow-hidden shadow-xl h-80 md:h-96 border
                     ${isDark ? "border-gray-800" : "border-gray-200"}`}
                   >
-        <iframe
-  title="AI Knots Solution - Full Location"
-  src="https://www.google.com/maps?q=103,+Goyal+Vihar,+Plot+No.31-C,+Zone-II,+M.P.+Nagar,+Bhopal,+Madhya+Pradesh+462011,+India&output=embed"
-  width="100%"
-  height="100%"
-  style={{ border: 0 }}
-  allowFullScreen=""
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
+                    <iframe
+                      title="AI Knots Solution - Full Location"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.867285760282!2d77.43456627477637!3d23.229885108561017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43e914c4c45f%3A0x63eea333d8d228ca!2sAI%20Knots%20It%20Solution!5e1!3m2!1sen!2sin!4v1781177112409!5m2!1sen!2sin"
+                  
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+
+                  
                   </motion.div>
                 </div>
               </div>

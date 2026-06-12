@@ -206,13 +206,21 @@ const Footer = () => {
               Contact Us
             </h4>
             <ul className="space-y-4 text-sm">
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-red-500 mt-0.5 shrink-0" />
-                <span className={isDark ? "text-gray-300" : "text-gray-700"}>
-                  103, Goyal Vihar, Plot No 31-C, Zone 2, M.P. Nagar, Bhopal -
-                  462011 Madhya Pradesh, India
-                </span>
-              </li>
+             <li className="flex items-start gap-3">
+  <MapPin size={18} className="text-red-500 mt-0.5 shrink-0" />
+
+  <a
+    href="https://maps.google.com/?q=AI+Knots+IT+Solution,+103+Goyal+Vihar,+Plot+No+31-C,+Zone+2,+MP+Nagar,+Bhopal,+Madhya+Pradesh+462011"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`hover:text-red-500 transition-colors ${
+      isDark ? "text-gray-300" : "text-gray-700"
+    }`}
+  >
+    103, Goyal Vihar, Plot No 31-C, Zone 2, M.P. Nagar, Bhopal - 462011,
+    Madhya Pradesh, India
+  </a>
+</li>
 
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-red-500 shrink-0" />
