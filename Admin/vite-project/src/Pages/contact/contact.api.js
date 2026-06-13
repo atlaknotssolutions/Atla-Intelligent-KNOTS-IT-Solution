@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "https://ai-knots-website-xw9f.onrender.com/api/contact";
+const API = "https://api.aiknotsit.com/api/contact";
 
 // GET All Contacts
 export const getContactsApi = () => {
