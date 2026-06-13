@@ -5,7 +5,7 @@
 //   "blog/fetchCategories",
 //   async (_, { rejectWithValue }) => {
 //     try {
-//       const res = await fetch("http://api.atlaknots.com/api/blogcategory");
+//       const res = await fetch("https://api.aiknotsit.com/api/blogcategory");
 //       if (!res.ok) throw new Error("Failed to fetch categories");
 //       const data = await res.json();
 //       if (!data.success) throw new Error(data.message || "Failed");
@@ -21,7 +21,7 @@
 //   "blog/fetchBlogPosts",
 //   async (_, { rejectWithValue }) => {
 //     try {
-//       const res = await fetch("http://api.atlaknots.com/api/product");
+//       const res = await fetch("https://api.aiknotsit.com/api/product");
 //       if (!res.ok) throw new Error("Failed to fetch posts");
 //       const data = await res.json();
 //       if (!data.success) throw new Error(data.message || "Failed");
@@ -37,7 +37,7 @@
 //   "blog/fetchBlogPostById",
 //   async (postId, { rejectWithValue }) => {
 //     try {
-//       const res = await fetch(`http://api.atlaknots.com/api/product/${postId}`);
+//       const res = await fetch(`https://api.aiknotsit.com/api/product/${postId}`);
 //       if (!res.ok) throw new Error("Post not found");
 //       const data = await res.json();
 //       if (!data.success) throw new Error(data.message || "Failed to load post");
@@ -55,7 +55,7 @@
 //   async (postId, { rejectWithValue }) => {
 //     try {
 //       const res = await fetch(
-//         `http://api.atlaknots.com/api/product/${postId}/view`,
+//         `https://api.aiknotsit.com/api/product/${postId}/view`,
 //         {
 //           method: "PUT",
 //         },
@@ -76,7 +76,7 @@
 //       const { postId, email } =
 //         typeof payload === "string" ? { postId: payload } : payload;
 //       const res = await fetch(
-//         `http://api.atlaknots.com/api/product/${postId}/like`,
+//         `https://api.aiknotsit.com/api/product/${postId}/like`,
 //         {
 //           method: "PUT",
 //           headers: { "Content-Type": "application/json" },
@@ -98,7 +98,7 @@
 //     try {
 //       const { postId, name, email, phone } = payload;
 //       const res = await fetch(
-//         `http://api.atlaknots.com/api/product/${postId}/send-otp`,
+//         `https://api.aiknotsit.com/api/product/${postId}/send-otp`,
 //         {
 //           method: "POST",
 //           headers: { "Content-Type": "application/json" },
@@ -119,7 +119,7 @@
 //   async ({ postId, email, otp }, { rejectWithValue }) => {
 //     try {
 //       const res = await fetch(
-//         `http://api.atlaknots.com/api/product/${postId}/verify-otp`,
+//         `https://api.aiknotsit.com/api/product/${postId}/verify-otp`,
 //         {
 //           method: "POST",
 //           headers: { "Content-Type": "application/json" },
@@ -141,7 +141,7 @@
 //   async ({ postId, email, comment }, { rejectWithValue }) => {
 //     try {
 //       const res = await fetch(
-//         `http://api.atlaknots.com/api/product/${postId}/comment`,
+//         `https://api.aiknotsit.com/api/product/${postId}/comment`,
 //         {
 //           method: "POST",
 //           headers: { "Content-Type": "application/json" },
@@ -262,7 +262,7 @@ export const fetchCategories = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/blogcategory`);
       if (!res.ok) throw new Error("Failed to fetch categories");
       const data = await res.json();
@@ -280,7 +280,7 @@ export const fetchBlogPosts = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/product`);
       if (!res.ok) throw new Error("Failed to fetch posts");
       const data = await res.json();
@@ -301,7 +301,7 @@ export const fetchBlogPostById = createAsyncThunk(
       if (!identifier) throw new Error("Slug/ID is required");
 
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/product/${identifier}`);
       if (!res.ok) throw new Error("Post not found");
 
@@ -322,7 +322,7 @@ export const incrementPostView = createAsyncThunk(
   async (postId, { rejectWithValue }) => {
     try {
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/product/${postId}/view`, {
         method: "PUT",
       });
@@ -343,7 +343,7 @@ export const togglePostLike = createAsyncThunk(
         typeof payload === "string" ? { postId: payload } : payload;
 
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/product/${postId}/like`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
@@ -364,7 +364,7 @@ export const sendCommentOtp = createAsyncThunk(
     try {
       const { postId, name, email, phone } = payload;
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/product/${postId}/send-otp`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -384,7 +384,7 @@ export const verifyCommentOtp = createAsyncThunk(
   async ({ postId, email, otp }, { rejectWithValue }) => {
     try {
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/product/${postId}/verify-otp`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -405,7 +405,7 @@ export const postComment = createAsyncThunk(
   async ({ postId, email, comment }, { rejectWithValue }) => {
     try {
       const baseUrl =
-        import.meta.env.VITE_API_URL || "http://api.atlaknots.com";
+        import.meta.env.VITE_API_URL || "https://api.aiknotsit.com";
       const res = await fetch(`${baseUrl}/api/product/${postId}/comment`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -547,7 +547,7 @@
 //       {/* HERO SECTION */}
 
       
-//       <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-[#D6E7F7] overflow-hidden">
+//       <section className="relative min-h-screen flex items-center px-6 pt-24 pb-16 bg-gradient-to-br from-[#e2d7a4] via-[#f9efe1] to-[#b8a790]from-[#D6E7F7]  to-[#a39d6f] overflow-hidden">
 //         {/* Background decorative elements */}
 //         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
 //         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-400/10 rounded-full blur-3xl"></div>
@@ -638,7 +638,7 @@
     
       
 
-//       <section className="py-20 bg-white  from-[#e2d7a4] via-[#f9efe1] to-[#b8a790] overflow-hidden">
+//       <section className="py-20   from-[#efeee9] via-[#f9efe1] to-[#b8a790] overflow-hidden">
 //         <div className="max-w-7xl mx-auto px-6">
 //           <div className="grid md:grid-cols-2 gap-12 items-start">
 //            <motion.div
@@ -646,7 +646,7 @@
 //               whileInView={{ opacity: 1, x: 0 }}
 //               viewport={{ once: true }}
 //             >
-//               <h2 className="text-4xl md:text-5xl font-bold text-indigo-950 leading-tight mb-10">
+//               <h2 className="text-4xl md:text-5xl font-bold text-[#462206] leading-tight mb-10">
 //                 About Us
 //                 <br />
                 
@@ -668,10 +668,10 @@
 //       transition={{ delay: i * 0.1 }}
 //       className="flex gap-4 items-start group"
 //     >
-//       <span className="text-2xl text-blue-600 group-hover:scale-110 transition-transform">
+//       <span className="text-2xl text-[#93460c] group-hover:scale-110 transition-transform">
 //         ✓
 //       </span>
-//       <p className="text-gray-700 leading-relaxed font-medium">
+//       <p className="text-[#72441e] leading-relaxed font-medium">
 //         {item}
 //       </p>
 //     </motion.li>
@@ -707,12 +707,12 @@
 //           >
 //             <div className="grid md:grid-cols-2 gap-12">
 //               <div>
-//                 <h2 className="text-4xl font-bold text-indigo-950 leading-tight mb-6">
+//                 <h2 className="text-4xl font-bold text-[#462206]  leading-tight mb-6">
 //                   Automate Your Complex
 //                   <br />
 //                   Business Process AI KNOTS
 //                 </h2>
-//                 <p className="text-gray-600 leading-relaxed text-lg">
+//                 <p className="text-[#72441e] leading-relaxed text-lg">
 //                   More work. Less stress! AI KNOTS is the ultimate solution to
 //                   streamline and automate your marketing and business
 //                   operations. From automating workflows to generating insightful
@@ -720,7 +720,7 @@
 //                   success.
 //                 </p>
 //               </div>
-//               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+//               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[#462206] ">
 //                 {[
 //                   { number: "220+", label: "Live Setup" },
 //                   { number: "12,230+", label: "Users" },
@@ -737,12 +737,12 @@
 //                   <motion.div
 //                     key={i}
 //                     whileHover={{ y: -5 }}
-//                     className="bg-indigo-50 hover:bg-indigo-100 transition-colors rounded-2xl p-6 cursor-pointer"
+//                     className="bg-[#f8e1cf] hover:bg-[#FFF6EF] transition-colors rounded-2xl p-6 cursor-pointer"
 //                   >
-//                     <div className="text-4xl font-bold text-indigo-600 mb-1">
+//                     <div className="text-4xl font-bold text-[#462206] mb-1">
 //                       <Counter value={stat.number} duration={2} />
 //                     </div>
-//                     <div className="text-gray-600 font-medium">
+//                     <div className="text-[#7a5e46] font-medium">
 //                       {stat.label}
 //                     </div>
 //                   </motion.div>
@@ -763,7 +763,7 @@
 //             className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900"
 //           >
 //             Our{" "}
-//             <span className="bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] bg-clip-text text-transparent">
+//             <span className="bg-gradient-to-r bg-gradient-to-br from-[#60533e] via-[#826c50] to-[#928a7f] bg-clip-text text-transparent">
 //               Features
 //             </span>
 //           </motion.h2>
@@ -780,7 +780,7 @@
 //                   onClick={() => setActiveFeatureTab(tab)}
 //                   className={`px-6 py-2 rounded-full font-semibold transition-all text-sm ${
 //                     activeFeatureTab === tab
-//                       ? "bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] text-white shadow"
+//                       ? "bg-gradient-to-r  bg-gradient-to-br from-[#60533e] via-[#826c50] to-[#928a7f] text-white shadow"
 //                       : "text-gray-600 hover:text-gray-800"
 //                   }`}
 //                 >
@@ -967,7 +967,7 @@
 //             className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900"
 //           >
 //             Benefits Of Business Process Automation By{" "}
-//             <span className="bg-gradient-to-r bg-gradient-to-br from-[#F5F0E8] via-[#EFE6DA] to-[#E8DCCB] bg-clip-text text-transparent">
+//             <span className="bg-gradient-to-r bg-gradient-to-br from-[#bc9b65] via-[#9b8c77] to-[#ad9779] bg-clip-text text-transparent">
 //               AI KNOTS
 //             </span>
 //           </motion.h2>
